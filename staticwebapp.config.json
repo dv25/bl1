@@ -1,6 +1,6 @@
 {
   "navigationFallback": {
-    "rewrite": "/index.html",
+    "rewrite": "/bl1/index.html",
     "exclude": [
       "*.{css,js}",
       "*.{png}",
@@ -9,19 +9,19 @@
   },
   "routes": [
     {
-      "route": "/package_*",
+      "route": "/bl1/package_*",
       "headers": {
         "cache-control": "public, immutable, max-age=31536000"
       }
     },
     {
-      "route": "/*.ttf",
+      "route": "/bl1/*.ttf",
       "headers": {
         "cache-control": "public, immutable, max-age=31536000"
       }
     },
     {
-      "route": "/*",
+      "route": "/bl1/*",
       "headers": {
         "cache-control": "must-revalidate, max-age=3600"
       }
